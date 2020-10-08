@@ -1,0 +1,46 @@
+# Source ssp docker image 
+from_image: "ssp-docker-registry.codasip.com/free/distrib-ssp-seh1-free:latest"
+# Target docker image 
+new_image: "custom-ssp"
+
+# NFS drives which shall be mounted in customized docker container
+drives:
+    # - server.address:/source/location /target/location
+
+# symbolic links which shall be created in customized docker container
+symlinks:
+    # - source target
+
+# groups which shall be created in customized docker container
+groups:
+    # groupname: gid
+#    yourgroup: 4000
+
+# List of user accounts which shall be created in customized docker container. 
+# Each of items shall contain user's login name, uid, gid, additional groups and optional shell selection 
+users:
+    # - name: username
+    #   uid: uid_number
+    #   gid: gid_number
+    #   groups:
+    #       - gid
+    #       - gid
+
+#      - name: yourlogin
+#        uid: 8001
+#        gid: 4000
+#        groups:
+#             - 18
+#             - 20
+
+
+# Environment variables that will be exported.
+export:
+    # - ENV_VARIABLE=True
+    # - PROGRAM_VERSION=1.2.3
+    - CPM_ALWAYS_CONFIGURE=True
+    - PATH=$PATH:/prj/ssp/common/bin
+#    - MGEN_XILINX_VIVADO_INSTALLDIR=/eda/linux/xilinx/vivado_2017.4
+#    - MGEN_XILINX_VIVADO_VERSION=2017.4
+#    - MGEN_GNU_TOOLCHAIN_INSTALLDIR=/eda/linux/gnu/7.3.1
+#    - MGEN_GNU_TOOLCHAIN_VERSION=7.3.1
