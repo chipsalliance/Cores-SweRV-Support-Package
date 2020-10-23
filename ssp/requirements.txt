@@ -1,0 +1,5 @@
+setuptools
+inquirer
+docker
+click==7.1.2
+PyYAML==5.3.1
