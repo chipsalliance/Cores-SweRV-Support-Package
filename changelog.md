@@ -1,5 +1,18 @@
 # SSP Launcher
 
+## 1.0.3
+
+**Updated**
+
+* Change README.md to README.adoc, added notes and corrections
+* Example yaml changed to 3.0.10
+
+## 1.0.2
+
+**New**
+
+* Added SweRV Core family configuration sheet 
+
 ## 1.0.1
 
 **New**
@@ -9,10 +22,6 @@
 **Updated**
 
 * README.md - Added description for the rule installation and check
-
-**Fix**
-
-* Fixed "missing module ssp" during first SSP installation
 
 ## 1.0.0
 
