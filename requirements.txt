@@ -1,5 +1,4 @@
-setuptools
-inquirer
-docker
 click==7.1.2
-PyYAML==5.3.1
+inquirer==2.7.0
+docker_py==1.10.6
+PyYAML==5.4.1
